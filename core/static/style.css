@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-family: 'Caprasimo', cursive;
+}
+
+.card-movie {
+    transition: transform 0.2s;
+    border: 1px solid #f8f9fc;
+}     
+.card-movie:hover {
+    transform: scale(1.06);
+}
+
+img {
+    max-height: 400px;
+}
+
+.card-body {
+    margin: 2em;
+}

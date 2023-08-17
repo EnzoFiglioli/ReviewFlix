@@ -1,0 +1,26 @@
+<header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-video p-2"></i>Review<span style="color:red;">Flix</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a href="{% url 'home' %}" class="nav-link active"><i class="fas fa-home mx-auto p-2"></i>Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'search' %}" class="nav-link active"><i class="fas fa-search mx-auto p-2"></i>Busqueda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'movies' %}" class="nav-link active"><i class="fas fa-film mx-auto p-2"></i>Peliculas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'contacto' %}" class="nav-link active"><i class="fas fa-user mx-auto p-2"></i>Contactame</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>

@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Películas - ReviewFlix{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Lista de Películas</h1>
+    <div class="row">
+        {% for movie in movies %}
+        <div class="col-md-4 mb-4">
+            <div class="card-movie h-100">
+                <img src="{{ movie.image_url }}" class="card-img-top" alt="{{ movie.title }}">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">{{ movie.title }} ({{movie.year}})</h5>
+                    <a class="btn btn-primary mt-auto" href="{% url 'movie-detail' pk=movie.pk %}">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
