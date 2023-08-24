@@ -14,3 +14,10 @@ class Movie(models.Model):
     reseña = models.TextField()
     def __str__(self):
         return self.title
+
+class Noticia(models.Model):
+    titulo = models.CharField(max_length=100)
+    link = models.URLField()
+    
+    def __str__(self):
+        return self.titulo
